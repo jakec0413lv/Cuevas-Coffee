@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cuevas Coffee</title>
+        <link href="./MobileLayout.css" type = "text/css" rel = "stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+              $('.slider').bxSlider({
+                  adaptiveHeight: true
+              });
+              
+            });
+          </script>
+    </head>
+<html>
+
+<body>
+    <div id = "header">
+    </div>
+    <h1 id = "main-header">Cuevas Coffee</h1>
+
+    <div id = "navbar">
+        <button onclick = "openTab('page1')">Home</button>
+        <button onclick = "openTab('page2')">Locations</button>
+        <button>Contact</button>
+    </div>
+
+    <div id = "page1" class = "content">
+        <div class="slider">
+            <div><img src="https://d2w1ef2ao9g8r9.cloudfront.net/images/Cafe-design-thumbnail.png?mtime=20200618155158&focal=90.34%25+50.14%25"/></div>
+            <div><img src="https://perfectdailygrind.com/wp-content/uploads/2019/02/coffee-bar.jpg"/></div>
+            <div><img src="https://perfectdailygrind.com/wp-content/uploads/2019/11/Coffeeshop-Tips-06.jpg"></div>
+        </div>
+        <div id = "text-area">
+            <h2>About Us</h2>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
+            Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with</p>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
+            Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with</p>
+        </div>
+    </div>
+
+    <div id = "page2" class = "content" style = "display:none">
+        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
+                Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with</p>
+        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of 
+                Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with</p>
+     </div>
+    <div id ="footer">
+        <div class = "social-media-bar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Yelp.svg/1024px-Yelp.svg.png">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png">
+            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png">
+            <img src="https://www.net-aware.org.uk/siteassets/images-and-icons/application-icons/app-icons-twitter.png?w=585&scale=down"/>
+        </div>
+        <button onclick = "openTab('page1')">Home</button>
+        <button onclick = "openTab('page2')">Locations</button>
+        <button>Contact</button> 
+    </div>
+
+    <script src= "./FunctionalButtons.js"></script>
+    <script src= "./CuevasCoffee.js"></script>
+</body>
